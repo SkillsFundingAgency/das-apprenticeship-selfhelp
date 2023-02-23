@@ -179,53 +179,7 @@ document.addEventListener('DOMContentLoaded', function () {
             return false;
         });
     }
-
-    //var signinIframe = $('body').children('div');
-    /*function makeSignInChanges(){
-    var theContent = signinIframe.children('iframe[scrolling="no"]:not([id])').contents();
-    theContent.find('#signin-styles').remove().end().find('head').prepend('<style id="signin-styles">'+
-          'div.modal * {font-family: "GDS Transport",Arial,sans-serif !important;}'+ 
-          'div.modal{border:4px solid #ccc !important;padding:40px !important;width:600px !important;box-shadow:0 4px 17px 0 rgba(0,0,0,0.4) !important;}'+ 
-          'div.modal div.flash.flash-notice{display:block;position:absolute;left:-3000px;top:-3000px;}'+ 
-      'div.flash.flash-error{padding: 0;margin: 0 0 20px 0;background: none;font-weight: bold;color:#d4351c !important;}'+
-      'div.flash.flash-error a,div.modal.password-reset-success-modal .controls.center_link a{text-decoration: underline !important;}'+
-          '#login-form input#user_email,#login-form input#user_password,#login-form input#remember_me,#registration-form #user_name{margin-bottom:30px !important;}'+ 
-          'div.interface.outer h2#signin_title, div.modal > h2.title{font-weight:bold;text-align:left;font-size:23px !important;font-size:1.65rem !important;}'+
-          'div.services.internal, #password-reset-form > p,#registration-form > p{width:100% !important;}'+
-          'div.credentials label,div.remember label,#password-reset-form > fieldset label,#registration-form fieldset label{font-weight:400 !important;color:#0b0c0c;display:inline-block;margin-bottom:5px;font-size:19px !important;font-size:1.35rem !important;}'+
-          'div.credentials input,#password-reset-form input#email,#registration-form fieldset input{height:45px !important;margin-top:0;padding:5px;border:2px solid #0b0c0c;width:100%;border-radius:0;}'+
-          'div.remember{margin:30px 0 0 0 !important;}'+
-          '#login-form > input.button.primary,#password-reset-form .controls .button.primary,#registration-form .controls .button.primary{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-weight:400;font-size:19px;line-height:1.1875;-webkit-box-sizing:border-box;box-sizing:border-box;display:inline-block;position:relative;width:auto;margin-top:0;margin-bottom:22px;padding:8px 10px 7px;border:2px solid transparent;border-radius:0;color:#fff;background-color:#00703c;box-shadow:0 2px 0 #002d18;text-align:center;vertical-align:top;cursor:pointer;-webkit-appearance:none;float:left;}'+
-          '#zendesk-js-forgot-password, #password-reset-form > p,#registration-form > p,div.flash.flash-error,div.modal.password-reset-success-modal p,div.modal.password-reset-success-modal .controls.center_link a {text-align:left;font-size:19px !important;font-size:1.35rem !important;line-height:1.4 !important;}'+
-          'div.footnotes p.get_password.question,div.footnotes p.get_password.question + p,div.footnotes div.sign_up.question{display:none;}'+    
-          '@media only screen and (min-width:768px){div.modal{width:auto; }}'+   
-      'div.credentials input:focus,#login-form #remember_me:focus,#password-reset-form input#email:focus,#registration-form #user_name:focus,#registration-form #user_email:focus{outline:3px solid #fd0;outline-offset:0;box-shadow: inset 0 0 0 2px;}'+
-      'form#login-form input.button.primary:focus,#password-reset-form input.button.primary:focus,#registration-form input.button.primary:focus{border-color:#fd0;color:#0b0c0c;background-color:#fd0;box-shadow:0 2px 0 #0b0c0c;outline: 3px solid transparent;}'+
-      '#zendesk-js-forgot-password{margin:0;}'+
-      'div.modal.password-reset-success-modal .controls.center_link{text-align:right !important;}'+
-      'div.modal.password-reset-success-modal .controls.center_link a{color:#1d70b8 !important;}'+
-      'div.modal.password-reset-success-modal > p + p{display:none;}'+
-      '#password-reset-form > p{position: relative;text-indent:-3000px;height:60px;display:block;font-size:19px !important;}'+
-    '#password-reset-form > p:before{content: "Enter your email address and we’ll send you a link to reset your password.";position:absolute;height:inherit;width:inherit;left:0;top:0;z-index:100;text-indent:0;}'+
-      'div.modal:not(.password-reset-success-modal):not(.signin) > h2.title{height: 30px;position:relative;text-indent:-3000px !important;display:block;font-size:19px !important;}'+
-      'div.modal:not(.password-reset-success-modal):not(.signin) > h2.title:before{content:"Reset your password";position:absolute;height:inherit;width:inherit;left:0;top:0;z-index:100;text-indent:0;font-size:23px;}'+
-      '#login-form .credentials label[for="user_email"]{height:30px;position:relative;width:100%;margin-bottom:50px;}'+
-      '#login-form .credentials label[for="user_email"]:before{display:inline-block;position:absolute;width:100%;color:#626a6e;font-size:14px;height:45px;top:30px;content:"Your sign in details are not linked to your apprenticeship service account. Select ‘reset your password’ if you need to create sign in details.";}'+
-        '</style>');
-      var fgp = theContent.find('#zendesk-js-forgot-password');
-      fgp.find('a').text('Reset your password');
-  }*/
-
-    /*if(signinIframe.children('iframe:not([id])').length){
-        MutationObserver = window.MutationObserver || window.WebKitMutationObserver;
-        var observer = new MutationObserver(function(mutations, observer){// fired when a mutation occurs //console.log(mutations, observer);
-          makeSignInChanges();
-          //replaceSignInContent();
-        });
-        observer.observe(document, {subtree: true, attributes: true });//this level needed for <style> injection: observer.observe(document, {subtree: true, attributes: true, childList: true });
-    }*/
-    /* *** request(s) page(s) ends *** */
-
+   
 
     /* *** maintain list state on back-button, starts *** */
     var requestSubject = $('#request_subject');
@@ -278,11 +232,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
             /* Remove attachments due to virus concerns */
             $new_request.find('label[for=request-attachments]').parent().remove();//addClass('hide');
-
-            // function restyleAttachments(){//keep for future use
-            //   $new_request.find('label[for=request-attachments]').html('Add a file');
-            //   $('<p class="govuk-hint govuk-body-s">You can add up to 5 photos or files.</p>').insertBefore($('#upload-dropzone')); 
-            // }        
 
             /* Feedback page */
             if (ticketForm == esfa_variables.form_id_feedback) {
@@ -382,11 +331,7 @@ document.addEventListener('DOMContentLoaded', function () {
         $('#cookie-consent-No').change(function() {writeCookie('AnalyticsConsent','false',365); writeCookie('seen_cookie_message_help','cookie_policy',365); });*/
     }
     /* Cookie Article, with consent ends */
-
-
-
 });
-
 
 window.dataLayer = window.dataLayer || [];
 window.onload = function () {
