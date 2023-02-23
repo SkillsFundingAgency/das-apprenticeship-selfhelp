@@ -264,12 +264,20 @@ li {
 }
 
 /***** Das custom styles *****/
+.center{
+    text-align: center;
+}
+
 .app-section {
     padding: 40px 0;
 }
 
 .app-section--blue {
     background-color: #1d70b8;
+}
+
+.app-section--black {
+    background-color: #000000;
 }
 
 .app-heading--section-blue {
