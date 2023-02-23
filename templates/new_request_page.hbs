@@ -1,24 +1,16 @@
-<div class="container-divider"></div>
-<div class="container">
-  <nav class="sub-nav">
-    {{breadcrumbs}}
-    <div class="search-container">
-      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false" viewBox="0 0 12 12" class="search-icon" aria-hidden="true">
-        <circle cx="4.5" cy="4.5" r="4" fill="none" stroke="currentColor"/>
-        <path stroke="currentColor" stroke-linecap="round" d="M11 11L7.5 7.5"/>
-      </svg>
-      {{search submit=false}}
+<div class="govuk-width-container">
+    {{#link 'help_center' class='govuk-back-link'}}
+    Help home
+    {{/link}}
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+            <h1 class="govuk-heading-xl govuk-!-margin-top-8 govuk-!-margin-bottom-8" id="ticket-heading">Send a message</h1>
+            {{#if follow_up}}
+            <span class="govuk-caption-xl">{{follow_up}}</span>
+            {{/if}}
+            <div id="das-feedback-form">
+                {{request_form}}
+            </div>
+        </div>
     </div>
-  </nav>
-
-  <h1>
-    {{t 'submit_a_request'}}
-    <span class="follow-up-hint">
-      {{follow_up}}
-    </span>
-  </h1>
-
-  <div id="main-content" class="form">
-    {{request_form wysiwyg=true}}
-  </div>
 </div>

@@ -1,9 +1,9 @@
 {
-  "name": "Copenhagen",
-  "author": "Zendesk",
-  "version": "2.19.5",
-  "api_version": 2,
-  "default_locale": "en-us",
+  "name": "GDS Style",
+  "author": "Ben Arnold",
+  "version": "1.9.57",
+  "api_version": 1,
+  "default_locale": "en-gb",
   "settings": [
     {
       "label": "colors_group_label",
@@ -13,7 +13,7 @@
           "type": "color",
           "description": "brand_color_description",
           "label": "brand_color_label",
-          "value": "#17494D"
+          "value": "rgba(29, 112, 184, 1)"
         },
         {
           "identifier": "brand_text_color",
@@ -27,28 +27,14 @@
           "type": "color",
           "description": "text_color_description",
           "label": "text_color_label",
-          "value": "#2F3941"
+          "value": "rgba(11, 12, 12, 1)"
         },
         {
           "identifier": "link_color",
           "type": "color",
           "description": "link_color_description",
           "label": "link_color_label",
-          "value": "#1F73B7"
-        },
-        {
-          "identifier": "hover_link_color",
-          "type": "color",
-          "description": "hover_link_color_description",
-          "label": "hover_link_color_label",
-          "value": "#0F3554"
-        },
-        {
-          "identifier": "visited_link_color",
-          "type": "color",
-          "description": "visited_link_color_description",
-          "label": "visited_link_color_label",
-          "value": "#9358B0"
+          "value": "rgba(0, 94, 165, 1)"
         },
         {
           "identifier": "background_color",
@@ -60,157 +46,6 @@
       ]
     },
     {
-      "label": "fonts_group_label",
-      "variables": [
-        {
-          "identifier": "heading_font",
-          "type": "list",
-          "description": "heading_font_description",
-          "label": "heading_font_label",
-          "value": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif",
-          "options": [
-            {
-              "label": "System",
-              "value": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
-            },
-            {
-              "label": "Arial",
-              "value": "Arial, 'Helvetica Neue', Helvetica, sans-serif"
-            },
-            {
-              "label": "Arial Black",
-              "value": "'Arial Black', Arial, 'Helvetica Neue', Helvetica, sans-serif"
-            },
-            {
-              "label": "Baskerville",
-              "value": "Baskerville, 'Times New Roman', Times, serif"
-            },
-            {
-              "label": "Century Gothic",
-              "value": "'Century Gothic', sans-serif"
-            },
-            {
-              "label": "Copperplate Light",
-              "value": "'Copperplate Light', 'Copperplate Gothic Light', serif"
-            },
-            {
-              "label": "Courier New",
-              "value": "'Courier New', Courier, monospace"
-            },
-            {
-              "label": "Futura",
-              "value": "Futura, 'Century Gothic', sans-serif"
-            },
-            {
-              "label": "Garamond",
-              "value": "Garamond, 'Hoefler Text', 'Times New Roman', Times, serif"
-            },
-            {
-              "label": "Geneva",
-              "value": "Geneva, 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif"
-            },
-            {
-              "label": "Georgia",
-              "value": "Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif"
-            },
-            {
-              "label": "Helvetica",
-              "value": "Helvetica, Arial, sans-serif"
-            },
-            {
-              "label": "Helvetica Neue",
-              "value": "'Helvetica Neue', Arial, Helvetica, sans-serif"
-            },
-            {
-              "label": "Impact",
-              "value": "Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif"
-            },
-            {
-              "label": "Lucida Grande",
-              "value": "'Lucida Grande', 'Lucida Sans', 'Lucida Sans Unicode', sans-serif"
-            },
-            {
-              "label": "Trebuchet MS",
-              "value": "'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif"
-            }
-          ]
-        },
-        {
-          "identifier": "text_font",
-          "type": "list",
-          "description": "text_font_description",
-          "label": "text_font_label",
-          "value": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif",
-          "options": [
-            {
-              "label": "System",
-              "value": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
-            },
-            {
-              "label": "Arial",
-              "value": "Arial, 'Helvetica Neue', Helvetica, sans-serif"
-            },
-            {
-              "label": "Arial Black",
-              "value": "'Arial Black', Arial, 'Helvetica Neue', Helvetica, sans-serif"
-            },
-            {
-              "label": "Baskerville",
-              "value": "Baskerville, 'Times New Roman', Times, serif"
-            },
-            {
-              "label": "Century Gothic",
-              "value": "'Century Gothic', sans-serif"
-            },
-            {
-              "label": "Copperplate Light",
-              "value": "'Copperplate Light', 'Copperplate Gothic Light', serif"
-            },
-            {
-              "label": "Courier New",
-              "value": "'Courier New', Courier, monospace"
-            },
-            {
-              "label": "Futura",
-              "value": "Futura, 'Century Gothic', sans-serif"
-            },
-            {
-              "label": "Garamond",
-              "value": "Garamond, 'Hoefler Text', 'Times New Roman', Times, serif"
-            },
-            {
-              "label": "Geneva",
-              "value": "Geneva, 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif"
-            },
-            {
-              "label": "Georgia",
-              "value": "Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif"
-            },
-            {
-              "label": "Helvetica",
-              "value": "Helvetica, Arial, sans-serif"
-            },
-            {
-              "label": "Helvetica Neue",
-              "value": "'Helvetica Neue', Arial, Helvetica, sans-serif"
-            },
-            {
-              "label": "Impact",
-              "value": "Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif"
-            },
-            {
-              "label": "Lucida Grande",
-              "value": "'Lucida Grande', 'Lucida Sans', 'Lucida Sans Unicode', sans-serif"
-            },
-            {
-              "label": "Trebuchet MS",
-              "value": "'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "label": "brand_group_label",
       "variables": [
         {
@@ -218,13 +53,6 @@
           "type": "file",
           "description": "logo_description",
           "label": "logo_label"
-        },
-        {
-          "identifier": "show_brand_name",
-          "type": "checkbox",
-          "description": "show_brand_name_description",
-          "label": "show_brand_name_label",
-          "value": true
         },
         {
           "identifier": "favicon",
@@ -265,7 +93,7 @@
           "type": "checkbox",
           "description": "instant_search_description",
           "label": "instant_search_label",
-          "value": true
+          "value": false
         },
         {
           "identifier": "scoped_kb_search",
@@ -284,123 +112,70 @@
       ]
     },
     {
-      "label": "home_page_group_label",
+      "label": "Form / Kowledge Base IDs",
       "variables": [
         {
-          "identifier": "show_recent_activity",
-          "type": "checkbox",
-          "description": "recent_activity_description",
-          "label": "recent_activity_label",
-          "value": true
-        }
-      ]
-    },
-    {
-      "label": "article_page_group_label",
-      "variables": [
-        {
-          "identifier": "show_articles_in_section",
-          "type": "checkbox",
-          "description": "articles_in_section_description",
-          "label": "articles_in_section_label",
-          "value": true
+          "identifier": "form_id_default",
+          "type": "text",
+          "description": "Ticket form",
+          "label": "Send a Message",
+          "value": "360000695579"
         },
         {
-          "identifier": "show_article_author",
-          "type": "checkbox",
-          "description": "article_author_description",
-          "label": "article_author_label",
-          "value": true
+          "identifier": "form_id_feedback",
+          "type": "text",
+          "description": "Ticket form",
+          "label": "Feedback",
+          "value": "360000712140"
         },
         {
-          "identifier": "show_article_comments",
-          "type": "checkbox",
-          "description": "article_comments_description",
-          "label": "article_comments_label",
-          "value": true
+          "identifier": "article_id_cookies",
+          "type": "text",
+          "description": "Footer section",
+          "label": "Cookies",
+          "value": "360008941440"
         },
         {
-          "identifier": "show_follow_article",
-          "type": "checkbox",
-          "description": "follow_article_description",
-          "label": "follow_article_label",
-          "value": true
+          "identifier": "article_id_accessibility",
+          "type": "text",
+          "description": "Footer section",
+          "label": "Accesibility",
+          "value": "360008997820"
         },
         {
-          "identifier": "show_recently_viewed_articles",
-          "type": "checkbox",
-          "description": "recently_viewed_articles_description",
-          "label": "recently_viewed_articles_label",
-          "value": true
+          "identifier": "article_id_covid19",
+          "type": "text",
+          "description": "Articles section",
+          "label": "COVID-19 Guidance",
+          "value": "360003793119"
         },
         {
-          "identifier": "show_related_articles",
-          "type": "checkbox",
-          "description": "related_articles_description",
-          "label": "related_articles_label",
-          "value": true
+          "identifier": "article_id_apprentice",
+          "type": "text",
+          "description": "Articles section",
+          "label": "COVID-19 Apprentice",
+          "value": "360003798540"
         },
         {
-          "identifier": "show_article_sharing",
-          "type": "checkbox",
-          "description": "article_sharing_description",
-          "label": "article_sharing_label",
-          "value": true
-        }
-      ]
-    },
-    {
-      "label": "section_page_group_label",
-      "variables": [
-        {
-          "identifier": "show_follow_section",
-          "type": "checkbox",
-          "description": "follow_section_description",
-          "label": "follow_section_label",
-          "value": true
-        }
-      ]
-    },
-    {
-      "label": "community_post_group_label",
-      "variables": [
-        {
-          "identifier": "show_follow_post",
-          "type": "checkbox",
-          "description": "follow_post_description",
-          "label": "follow_post_label",
-          "value": true
+          "identifier": "google_tag_manager_id",
+          "type": "text",
+          "description": "GTM Identifier",
+          "label": "Google Tag Manager",
+          "value": "GTM-N77DM65"
         },
         {
-          "identifier": "show_post_sharing",
-          "type": "checkbox",
-          "description": "post_sharing_description",
-          "label": "post_sharing_label",
-          "value": true
-        }
-      ]
-    },
-    {
-      "label": "community_topic_group_label",
-      "variables": [
+          "identifier": "recursive_api_key",
+          "type": "text",
+          "description": "Co-Browsing",
+          "label": "Recursive API Key",
+          "value": ""
+        },
         {
-          "identifier": "show_follow_topic",
+          "identifier": "disable_search_engine_indexing",
           "type": "checkbox",
-          "description": "follow_topic_description",
-          "label": "follow_topic_label",
+          "description": "Tell Google/Bing etc not to index",
+          "label": "Add NoRobots tag",
           "value": true
-        }
-      ]
-    },
-    {
-      "label": "request_list_group_label",
-      "variables": [
-        {
-          "identifier": "request_list_beta",
-          "type": "checkbox",
-          "description": "request_list_beta_description",
-          "label": "request_list_beta_label",
-          "value": false
         }
       ]
     }

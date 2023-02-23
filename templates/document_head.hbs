@@ -1,4 +1,31 @@
+{{#if settings.disable_search_engine_indexing}}
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet" />
+{{/if}}
+
 <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-<!-- Make the translated search clear button label available for use in JS -->
-<!-- See buildClearSearchButton() in script.js -->
-<script type="text/javascript">window.searchClearButtonLabelLocalized = "{{t 'search_clear'}}";</script>
+<link rel="stylesheet" href="https://das-prd-frnt-end.azureedge.net/css/main.css">
+<link rel="stylesheet" href="https://das-prd-frnt-end.azureedge.net/fiu/css/all.css?20230207.3">
+
+{{#if settings.google_tag_manager_id}}
+<!-- Google Tag Manager -->
+<script>
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','{{settings.google_tag_manager_id}}');</script>
+<!-- End Google Tag Manager -->
+{{/if}}
+
+{{#if settings.recursive_api_key}}
+<script id="co-snippet" src="https://embed-euw1.rcrsv.io/{{settings.recursive_api_key}}?zwwi=1"></script>
+{{/if}}
+
+<script>
+  // Hack to get settings into `script.js`, which does not support
+  // theme-defined variables.
+  var esfa_variables = {
+  	form_id_default: {{settings.form_id_default}},
+  	form_id_feedback: {{settings.form_id_feedback}},
+  };
+</script>
