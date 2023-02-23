@@ -52,19 +52,12 @@
                     <img src="https://das-prd-frnt-end.azureedge.net/fiu/assets/images/apprenticeships-logo-black.svg" alt="Apprenticeships logo" class="fiu-header__apprenticeship-logo">
                 </span>
             </a>          
-        </div>
-         <div class="govuk-header__content">
-            {{#link 'help_center' class='govuk-header__link govuk-header__link--service-name'}}
-            <span class="govuk-visually-hidden">Home: </span>
-            Get help with the apprenticeship service
-            {{/link}}
-        </div>
-        
+        </div>                
     </div>
 </header>
 
 {{#if signed_in}}
-<nav id="requests-sub-nav" class="govuk-phase-banner govuk-width-container">
+<nav id="requests-sub-nav" class="govuk-width-container">
     <ul class="govuk-list" role="menubar">
         <li><a href="/access/logout?return_to=https%3A%2F%2Fsupport.zendesk.com%2Fhc%2Fen-us" class="govuk-link govuk-link--no-visited-state" role="menuitem">Sign out</a></li>
     </ul>
