@@ -276,6 +276,10 @@ li {
     margin-top: 20px;
 }
 
+.white{
+    color: white !important;
+}
+
 .app-section {
     padding: 40px 0;
 }
