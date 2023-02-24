@@ -546,7 +546,35 @@ ul.govuk-radios {
     display: block !important;
 }
 
-
+/***** Breadcrumbs *****/
+.breadcrumbs {
+    margin: 0 0 15px 0;
+    padding: 0;
+  }
+  
+  @media (min-width: 768px) {
+    .breadcrumbs {
+      margin: 0;
+    }
+  }
+  
+  .breadcrumbs li {
+    color: lighten($text_color, 20%);
+    display: inline;
+    font-size: 13px;
+    max-width: 450px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .breadcrumbs li + li::before {
+    content: ">";
+    margin: 0 4px;
+  }
+  
+  .breadcrumbs li a:visited {
+    color: $link_color;
+  }
 
 /*********** GDR style duplicates start ... ***********/
 body.js-enabled .js-show {
