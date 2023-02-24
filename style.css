@@ -288,6 +288,10 @@ li {
     background-color: #000000;
 }
 
+.app-section-white {
+    background-color: #FFFFFF;
+}
+
 .app-heading--section-blue {
     color: #fff !important;
 }
