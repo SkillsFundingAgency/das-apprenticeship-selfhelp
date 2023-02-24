@@ -21,7 +21,7 @@ p {
 }
 
 a:link {
-    color: #005ea5
+    color: #FFFFFF
 }
 
 a:visited {
@@ -37,7 +37,7 @@ a:active {
 }
 
 a:focus {
-    color: #0b0c0c
+    color: #005ea5
 }
 
 ul, ol, dt {
