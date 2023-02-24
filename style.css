@@ -280,6 +280,10 @@ li {
     color: white !important;
 }
 
+.no-top-padding {
+    padding-top: 0 !important;
+}
+
 .app-section {
     padding: 40px 0;
 }
