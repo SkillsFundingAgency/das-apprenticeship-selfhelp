@@ -280,6 +280,10 @@ li {
     color: white !important;
 }
 
+.z-index-3 {
+    z-index: 3;
+}
+
 .no-top-padding {
     padding-top: 0 !important;
 }
