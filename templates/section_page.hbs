@@ -1,70 +1,5 @@
 <div class="govuk-width-container">
-
-    <!-- Apprentice Articles -->
-    {{#is section.name 'Apprentice' }}
-    <style>
-        .hide-for-apprentices {
-            display: none;
-        }
-    </style>
-    {{else}}
-    {{#link 'help_center' class='govuk-back-link'}}
-    Help home
-    {{/link}}    
-    {{/is}}
-
-    <!-- Coronavirus Promoted Articles -->
-    {{#is section.name 'Coronavirus' }}
-
-    <div class="govuk-grid-row">
-        <div class="govuk-grid-column-two-thirds">
-            <div style="background-color: #f3f2f1; padding: 20px; margin: 50px 0;">
-
-                <h1 class="govuk-heading-l">Essential coronavirus (COVID-19) guidance</h1>
-
-                <p class="govuk-body"><a href="https://www.gov.uk/government/publications/coronavirus-covid-19-apprenticeship-programme-response" target="_blank" title="Opens in a new window">Read our guidance</a> on the changes we’re making to apprenticeships. You can also find out how to:</p>
-
-                {{#if section.articles}}
-                <ul class="govuk-list govuk-list--bullet">
-                    {{#each section.articles}}
-                    {{#if promoted}}
-                    <li class="govuk-!-margin-bottom-2">
-                        <a href="{{url}}" class="govuk-link">{{title}}</a>
-                    </li>
-                    {{/if}}
-                    {{/each}}
-                </ul>
-                {{/if}}
-            </div>
-        </div>
-    </div>
-    {{/is}}
-    <!-- Coronavirus Promoted Articles -->
-    <!-- Apprentice Promoted Articles -->
-    {{#is section.name 'Apprentice' }}
-
-    <div class="govuk-grid-row">
-        <div class="govuk-grid-column-two-thirds">
-
-            {{#if section.articles}}
-            <ul class="govuk-list govuk-list--bullet">
-                {{#each section.articles}}
-                {{#if promoted}}
-                <li class="govuk-!-margin-bottom-2">
-                    <a href="{{url}}" class="govuk-link">{{title}}</a>
-                </li>
-                {{/if}}
-                {{/each}}
-            </ul>
-            {{/if}}
-
-        </div>
-    </div>
-    {{/is}}
-    <!-- Apprentice Promoted Articles -->
-
-
-
+    
     <div class="govuk-grid-row govuk-!-margin-bottom-7">
         <div class="govuk-grid-column-two-thirds">
 
@@ -74,34 +9,26 @@
             <p class="govuk-body">{{section.description}}</p>
             {{/if}}
 
-            {{#if section.articles}}
-            <ul class="govuk-list">
-                {{#each section.articles}}
-                <li class="govuk-!-margin-bottom-3">
-                    <a href="{{url}}" class="govuk-link">{{title}}</a>
-                </li>
-                {{/each}}
-            </ul>
-            {{/if}}
+            <div class="fiu-grad-row">
+                <div class="fiu-width-container">
+                    <div class="govuk-grid-row fiu-flex-row">
+                        {{#each section.articles}}
+                            <div class="govuk-grid-column-one-quarter">
+                                <div class="fiu-card">
+                                    <h3 class="fiu-card__heading">{{title}}</h3>
+                                </div>
+                                <div class="fiu-card__content">
+                                   {{description}}
+                                </div>
+                                <a href="{{url}}" class="fiu-card__link"
+                            </div>
+                         {{/each}}
+                    </div>
+                </div>
+            </div>
 
-            <br>{{pagination}}
+            <br>
+            {{pagination}}
 
         </div>
     </div>
-
-    <!-- Apprentices Articles -->
-    {{#is section.name 'Apprentice' }}
-    <hr />
-    <section class="app-section">
-        <div class="govuk-width-container">
-            <div class="govuk-grid-row">
-                <div class="govuk-grid-column-full">
-                    <h2 class="govuk-heading-l" id="contact-us">Apprenticeship helpline</h2>
-                    <p class="govuk-body">Telephone: 0800 015 0400</p>
-                    <p class="govuk-body">8am to 10pm, 7 days a week</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    {{/is}}
-
