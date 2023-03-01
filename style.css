@@ -280,6 +280,10 @@ li {
     color: white !important;
 }
 
+.apprentice-green{
+    color: #3cb821 !important;
+}
+
 .z-index-3 {
     z-index: 3;
 }
