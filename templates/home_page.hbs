@@ -6,7 +6,6 @@
   <div class="fiu-page-header fiu-page-header--homepage">
     <div class="fiu-width-container center no-top-padding">
       <span class="fiu-page-header__image-mask">
-
         <div class="govuk-grid-row left">
           <div class="govuk-grid-column-two-thirds fiu-page-header__wrap">
             <div class="fiu-feature-text">
@@ -15,12 +14,11 @@
             </div>
             <p class="fiu-page-header__content-l govuk-!-width-two-thirds">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consectetur purus ut faucibus pulvinar elementum integer enim.</p>            
           </div>
-          <img class="fiu-page-header__hm-logo" src="https://das-prd-frnt-end.azureedge.net/fiu/assets/images/hm-government-logo.svg" alt="HM Government logo">
-       </div>
-      <h2 class="govuk-heading-l fiu-page-header__sub-heading">Support Articles</h2>
+          <img class="fiu-page-header__hm-logo" src="{{asset 'hm-government-logo.svg'}}" alt="HM Government logo">
+          <h2 class="govuk-heading-l fiu-page-header__sub-heading">Support Articles</h2>
+        </div>        
       </span>
-      <img src="{{asset 'apprentice-sparks.png'}}" alt="background-image" class="fiu-page-header__image fiu-fade-in" />
-      
+      <img src="{{asset 'apprentice-sparks.png'}}" alt="background-image" class="fiu-page-header__image fiu-fade-in" />      
     </div>
   </div> 
   
@@ -28,7 +26,7 @@
 
 <div class="fiu-grad-row fiu-homepage-card-container">
   <span class="fiu-grad-row__bg"></span>
-  <div class="fiu-width-container">
+  <div class="fiu-width-container padding-top-50">
     <div class="govuk-grid-row fiu-flex-row">
       {{#each categories}}
         {{#is name 'Help Articles'}}
