@@ -288,6 +288,10 @@ li {
     z-index: 3;
 }
 
+.max-width-75-pc{
+    max-width: 75% !important;
+}
+
 .no-top-padding {
     padding-top: 0 !important;
 }

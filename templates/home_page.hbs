@@ -14,37 +14,24 @@
 <div class="fiu-grad-row fiu-homepage-card-container">
   <span class="fiu-grad-row__bg"></span>
   <div class="fiu-width-container">
-    <div class="govuk-grid-row fiu-flex-row">
+    <div class="govuk-grid-row fiu-flex-row max-width-75-pc">
       {{#each categories}}
-        {{#each sections}}
-            <div class="govuk-grid-column-one-third z-index-3">
-                <div class="fiu-card">
-                    <h3 class="fiu-card__heading">{{name}}</h3>
-
-                    <div class="fiu-card__content">
-                        {{description}}
-                    </div>
-                    {{#each articles}}
-                        <a href="{{url}}" class="apprentice-green fiu-card__link">Learn more</a>
-                    {{/each}}
-                </div>
-            </div>
-        {{/each}}
-      {{/each}}
-      
-      {{!-- {{#each categories}}
-          <div class="govuk-grid-column-one-third z-index-3">
-            <div class="fiu-panel-homepage">
-              <div class="fiu-feature-text">
-                <strong class="fiu-tag fiu-tag--citizens fiu-panel__tag">Apprentices</strong>
-                <h2 class="govuk-heading-l fiu-panel-homepage__heading">{{name}}</h2>
+        {{#is name 'Help Articles'}}
+          {{#each sections}}
+              <div class="govuk-grid-column-one-third z-index-3">
+                  <div class="fiu-card">
+                      <h3 class="fiu-card__heading">{{name}}</h3>
+                      <div class="fiu-card__content">
+                          {{description}}
+                      </div>
+                      {{#each articles}}
+                          <a href="{{url}}" class="apprentice-green fiu-card__link">Learn more</a>
+                      {{/each}}
+                  </div>
               </div>
-              <p class="fiu-panel-homepage__content">{{description}}</p>
-              <a href="{{url}}" id="fiu-homepage-link-app-hub" class="fiu-button fiu-button--citizens fiu-panel-homepage__button">Learn more <span class="fiu-vh">becoming an apprentice</span></a>
-            </div>
-          </div>
-      {{/each}} --}}
-    
+          {{/each}}
+        {{/is}}
+      {{/each}}    
     </div>
   </div>
 </div>
