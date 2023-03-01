@@ -15,20 +15,21 @@
   <span class="fiu-grad-row__bg"></span>
   <div class="fiu-width-container">
     <div class="govuk-grid-row fiu-flex-row">
+      {{#each categories}}
+        {{#each sections}}
+            <div class="govuk-grid-column-one-quarter">
+                <div class="fiu-card">
+                    <h3 class="fiu-card__heading">{{name}}</h3>
 
-      {{#each sections}}
-          <div class="govuk-grid-column-one-quarter">
-              <div class="fiu-card">
-                  <h3 class="fiu-card__heading">{{name}}</h3>
-
-                  <div class="fiu-card__content">
-                      {{description}}
-                  </div>
-                  {{#each articles}}
-                      <a href="{{url}}" class="apprentice-green fiu-card__link">Learn more</a>
-                  {{/each}}
-              </div>
-          </div>
+                    <div class="fiu-card__content">
+                        {{description}}
+                    </div>
+                    {{#each articles}}
+                        <a href="{{url}}" class="apprentice-green fiu-card__link">Learn more</a>
+                    {{/each}}
+                </div>
+            </div>
+        {{/each}}
       {{/each}}
       
       {{!-- {{#each categories}}
