@@ -12,24 +12,25 @@
 </div>
 
 <div class="fiu-grad-row">
-    <div class="fiu-width-container">
-        <div class="govuk-grid-row fiu-flex-row">
-            {{#each sections}}
-                <div class="govuk-grid-column-one-quarter">
-                    <div class="fiu-card">
-                        <h3 class="fiu-card__heading">{{name}}</h3>
+  <span class="fiu-grad-row__bg"></span>
+  <div class="fiu-width-container">
+      <div class="govuk-grid-row fiu-flex-row">
+          {{#each sections}}
+              <div class="govuk-grid-column-one-quarter">
+                  <div class="fiu-card">
+                      <h3 class="fiu-card__heading">{{name}}</h3>
 
-                        <div class="fiu-card__content">
-                            {{description}}
-                        </div>
-                        {{#each articles}}
-                            <a href="{{url}}" class="fiu-card__link">Select</a>
-                        {{/each}}
-                    </div>
-                </div>
-            {{/each}}
-        </div>
-    </div>
+                      <div class="fiu-card__content">
+                          {{description}}
+                      </div>
+                      {{#each articles}}
+                          <a href="{{url}}" class="fiu-card__link">Select</a>
+                      {{/each}}
+                  </div>
+              </div>
+          {{/each}}
+      </div>
+  </div>
 </div>
 
 <section class="app-section app-section--white">
