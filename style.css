@@ -271,14 +271,14 @@ li {
 }
 
 .sections-list{
-    width: 75%;
-    text-align: center;
+    width: 75%;    
 }
 
 .section-card{
     position: relative;
     float: left;
     width: 25%;
+    margin:5px;
 }
 
 .center{
