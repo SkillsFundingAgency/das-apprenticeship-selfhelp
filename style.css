@@ -270,6 +270,17 @@ li {
     height: 50px;
 }
 
+.sections-list{
+    width: 3em;
+    text-align: center;
+}
+
+.section-card{
+    position: relative;
+    float: left;
+    width: 1em;
+}
+
 .center{
     text-align: center;
 }
