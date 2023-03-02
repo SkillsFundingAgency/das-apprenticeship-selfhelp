@@ -271,15 +271,34 @@ li {
 }
 
 .sections-list{
-    width: 66.66667%;    
+    width: 66.66667%;
+    position: relative;
+    float: left;
 }
 
-.section-card{
+.section-panel{
     position: relative;
     float: left;
     width: 30%;
     margin:5px;
     height: 250px;    
+}
+
+.section-card {
+    font-family: nobel, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: #fff;
+    padding: 20px 20px 50px;
+    margin-bottom: 20px;   
+    display: block;
+    color: #0b0c0c;
+    text-decoration: none;
+    border: 1px solid #cbd0d3;
+    border-radius: 5px;
+    position: relative
 }
 
 .center{
