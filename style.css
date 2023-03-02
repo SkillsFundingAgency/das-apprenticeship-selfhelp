@@ -271,13 +271,14 @@ li {
 }
 
 .sections-list{
-    width: 66.66667%;
+    width: 100%;
 }
 
 .section-panel{
     position: relative;
     float: left;
     width: 30%;
+    height: 340px;
     margin:5px;       
 }
 
