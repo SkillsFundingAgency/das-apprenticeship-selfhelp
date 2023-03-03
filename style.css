@@ -333,6 +333,10 @@ li {
     padding-top: 0 !important;
 }
 
+.no-bottom-padding {
+    padding-bottom: 0 !important;
+}
+
 .app-section {
     padding: 40px 0;
 }
