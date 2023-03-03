@@ -58,11 +58,12 @@
 
 <div class="fiu-grad-row fiu-homepage-card-container">
   <span class="fiu-grad-row__bg"></span>
-  <div class="fiu-width-container">
-    <div class="govuk-grid-column-two-thirds">
-        {{article.body}}
-        <p class="govuk-!-margin-top-8 govuk-!-margin-bottom-6">Last updated on {{date article.edited_at class='metadata' format="medium"}}</p>
-    </div>
-  </div>  
 </div>
 
+<section class="app-section app-section--white">
+  <div class="fiu-width-container center margin-top-20" style="min-height: 50px">
+    <div class="govuk-grid-column-two-thirds">
+      {{article.body}}
+    </div>
+  </div>  
+</section>
