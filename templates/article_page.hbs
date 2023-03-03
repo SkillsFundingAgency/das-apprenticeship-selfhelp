@@ -56,16 +56,16 @@
     </div>
 </div>
 
-<div id="main-content" class="govuk-width-container">
-    <span class="fiu-grad-row__bg"></span>
-    <div class="govuk-grid-row">
-        <div class="govuk-grid-column-two-thirds">
-            {{article.body}}
-            <p class="govuk-!-margin-top-8 govuk-!-margin-bottom-6">Last updated on {{date article.edited_at class='metadata' format="medium"}}</p>
-        </div>
+<div class="fiu-grad-row fiu-homepage-card-container">
+  <span class="fiu-grad-row__bg"></span>
+  <div class="fiu-width-container">
+    <div class="govuk-grid-column-two-thirds">
+        {{article.body}}
+        <p class="govuk-!-margin-top-8 govuk-!-margin-bottom-6">Last updated on {{date article.edited_at class='metadata' format="medium"}}</p>
     </div>
+  </div>
 
-    {{#with article}}
+  {{#with article}}
     <div>
         <div class="article-vote govuk-!-margin-top-6">
             {{vote 'up' role='radio' class='article-vote-hidden' selected_class="voted"}}
@@ -79,5 +79,5 @@
         </div>
     </div>
     {{/with}}
-
 </div>
+
