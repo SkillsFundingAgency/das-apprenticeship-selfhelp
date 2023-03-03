@@ -1,30 +1,26 @@
-<div id="main-content" class="govuk-width-container">
 
-    {{#is article.title 'Apprentices that have been made redundant' }}
-    <section name="header-surbey-banner" class="govuk-width-container notice-banner">
-        <div class="govuk-grid-row">
-            <div class="govuk-grid-column-full" style="background: #005ea5; padding: 20px; padding-bottom: 10px; margin-top: 30px !important; margin-bottom: 20px;">
-                <p class="notice-banner">
-                    Have you been made redundant?
-                    <a href="https://www.smartsurvey.co.uk/s/PMHPH1/">Take part in a feedback session</a>
-                    to help us improve how we support apprentices.
-                </p>
-            </div>
-        </div>
-    </section>
-    {{/is}}
+<div class="app-section no-bottom-padding">
+  <nav class="fiu-navigation fiu-navigation--citizens" data-fiu-navigation="true">
+    <div class="govuk-width-container">
+        <a href="#navigation" class="fiu-navigation__toggle" data-fiu-nav-toggle="true">
+            <span class="fiu-navigation__toggle-label" id="nav-label">Menu</span>
+            <span class="fiu-navigation__toggle-icon"></span>
+        </a>
+        <nav class="fiu-navigation__nav" data-fiu-nav-menu="true" id="navigation">
+            <h3 class="govuk-heading-s fiu-navigation__heading" id="fiu-nav-title-citizens">Apprentices</h3>
+            <ul class="fiu-navigation__list" aria-labelledby="fiu-nav-title-citizens">
+                <li class="fiu-navigation__list-item"><a id="fiu-app-menu-link-1" href="/apprentices/are-they-right-for-you" class="fiu-navigation__link">Link 1</a> </li>
+                <li class="fiu-navigation__list-item"><a id="fiu-app-menu-link-2" href="/apprentices/how-do-they-work" class="fiu-navigation__link">Link 2</a> </li>
+                <li class="fiu-navigation__list-item"><a id="fiu-app-menu-link-3" href="/apprentices/get-started" class="fiu-navigation__link">Link 3</a> </li>
+                <li class="fiu-navigation__list-item"><a id="fiu-app-menu-link-4" href="/apprentices/browse-apprenticeships" class="fiu-navigation__link">Link 4</a> </li>
+                <li class="fiu-navigation__list-item"><a id="fiu-app-menu-link-5" href="/apprentices/useful-resources-for-apprentices" class="fiu-navigation__link">Link 5</a> </li>
+            </ul>
+        </nav>
+    </div>
+  </nav>
+</div>
 
-
-    {{#is section.name 'Apprentice' }}
-    {{! Apprentices Articles -- }}
-    <a class='govuk-back-link' href="/hc/en-gb/sections/{{section.id}}-Apprentice">Apprentice</a>
-    <style>
-        .hide-for-apprentices {
-            display: none;
-        }
-    </style>
-    {{else}}
-    {{! All other articles -- }}
+<div class="app-section app-section--black">
     <div>
         <nav aria-label="breadcrumbs">
             <ol class="govuk-breadcrumbs govuk-breadcrumbs__list">
@@ -40,17 +36,28 @@
             </ol>
         </nav>
     </div>
-    {{/is}}
-
-    <div class="govuk-grid-row">
-        <div class="govuk-grid-column-two-thirds">
-            <h1 title="{{article.title}}" class="govuk-heading-xl govuk-!-margin-top-8 govuk-!-margin-bottom-2">{{article.title}}</h1>
-            <strong class="govuk-tag govuk-!-margin-bottom-3">
-                {{section.name}}<span class="govuk-visually-hidden">This article sits within the {{section.name}} section</span>
-            </strong>
+ 
+    <div class="fiu-page-header fiu-page-header--homepage">
+        <div class="fiu-width-container center no-top-padding">
+        <span class="fiu-page-header__image-mask">
+            <div class="govuk-grid-row left">
+            <div class="govuk-grid-column-two-thirds fiu-page-header__wrap">
+                <div class="fiu-feature-text">
+                    <strong class="fiu-tag fiu-tag--citizens fiu-page-header__tag">Apprentices</strong>
+                    <h1 class="govuk-heading-xl fiu-page-heading__title-hub">{{article.title}}</h1>
+                </div>
+                <p class="fiu-page-header__content-l govuk-!-width-two-thirds">{{section.description}}</p>
+                <img class="hm-logo" src="{{asset 'hm-government-logo.svg'}}" alt="HM Government logo">
+            </div>          
+            </div>        
+        </span>
+        <img src="{{asset 'apprentice-sparks.png'}}" alt="background-image" class="fiu-page-header__image fiu-fade-in" />      
         </div>
     </div>
+</div>
 
+<div id="main-content" class="govuk-width-container">
+    
     <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
             {{article.body}}
