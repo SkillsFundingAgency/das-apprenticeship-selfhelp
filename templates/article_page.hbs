@@ -1,4 +1,3 @@
-
 <div class="app-section no-bottom-padding">
   <nav class="fiu-navigation fiu-navigation--citizens" data-fiu-navigation="true">
     <div class="govuk-width-container">
@@ -21,49 +20,51 @@
 </div>
 
 <div class="app-section app-section--black">
-    <div>
-        <nav aria-label="breadcrumbs">
-            <ol class="govuk-breadcrumbs govuk-breadcrumbs__list">
-                <li class="govuk-breadcrumbs__list-item">
-                    {{#link 'help_center' class="govuk-breadcrumbs__link" aria-current="false"}}Home{{/link}}
-                </li>
-                <li class="govuk-breadcrumbs__list-item">
-                    <a class="govuk-breadcrumbs__link" aria-current="false" href="{{section.url}}">{{section.name}}</a>
-                </li>
-                <li class="govuk-breadcrumbs__list-item" aria-current="true">
-                    {{article.title}}
-                </li>
-            </ol>
-        </nav>
+    <nav aria-label="breadcrumbs">
+        <ol class="govuk-breadcrumbs govuk-breadcrumbs__list">
+            <li class="govuk-breadcrumbs__list-item">
+                {{#link 'help_center' class="govuk-breadcrumbs__link" aria-current="false"}}Home{{/link}}
+            </li>
+            <li class="govuk-breadcrumbs__list-item">
+                <a class="govuk-breadcrumbs__link" aria-current="false" href="{{section.url}}">{{section.name}}</a>
+            </li>
+            <li class="govuk-breadcrumbs__list-item" aria-current="true">
+                {{article.title}}
+            </li>
+        </ol>
+    </nav>
+  <div class="fiu-page-header fiu-page-header--homepage">
+    <div class="fiu-width-container center no-top-padding">
+      <span class="fiu-page-header__image-mask">
+        <div class="govuk-grid-row left">
+          <div class="govuk-grid-column-two-thirds fiu-page-header__wrap">
+            <div class="fiu-feature-text">
+                <strong class="fiu-tag fiu-tag--citizens fiu-page-header__tag">Apprentices</strong>
+                <h1 class="govuk-heading-xl fiu-page-heading__title-hub">{{article.title}}</h1>
+            </div>
+            <p class="fiu-page-header__content-l govuk-!-width-two-thirds">{{article.title}}</p>
+            <img class="hm-logo" src="{{asset 'hm-government-logo.svg'}}" alt="HM Government logo">
+          </div>          
+        </div>        
+      </span>
+      <img src="{{asset 'apprentice-sparks.png'}}" alt="background-image" class="fiu-page-header__image fiu-fade-in" />      
     </div>
- 
-    <div class="fiu-page-header fiu-page-header--homepage">
-        <div class="fiu-width-container center no-top-padding">
-        <span class="fiu-page-header__image-mask">
-            <div class="govuk-grid-row left">
-            <div class="govuk-grid-column-two-thirds fiu-page-header__wrap">
-                <div class="fiu-feature-text">
-                    <strong class="fiu-tag fiu-tag--citizens fiu-page-header__tag">Apprentices</strong>
-                    <h1 class="govuk-heading-xl fiu-page-heading__title-hub">{{article.title}}</h1>
-                </div>
-                <p class="fiu-page-header__content-l govuk-!-width-two-thirds">{{section.description}}</p>
-                <img class="hm-logo" src="{{asset 'hm-government-logo.svg'}}" alt="HM Government logo">
-            </div>          
-            </div>        
-        </span>
-        <img src="{{asset 'apprentice-sparks.png'}}" alt="background-image" class="fiu-page-header__image fiu-fade-in" />      
-        </div>
-    </div>
+  </div>
 </div>
 
 <div class="fiu-grad-row fiu-homepage-card-container">
   <span class="fiu-grad-row__bg"></span>
+  <div class="fiu-width-container">
+    {{article.body}}
+  </div>
 </div>
 
 <section class="app-section app-section--white">
   <div class="fiu-width-container center margin-top-20" style="min-height: 50px">
-    <div class="govuk-grid-column-two-thirds">
-      {{article.body}}
-    </div>
+    <label></label>
   </div>  
 </section>
+
+<script>
+    $(".govuk-list> li:nth-child(1n+4) .article-link").attr('hidden', true);
+</script>
