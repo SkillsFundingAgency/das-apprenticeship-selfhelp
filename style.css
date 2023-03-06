@@ -353,6 +353,18 @@ li {
     padding-bottom: 0 !important;
 }
 
+.gradient-background{
+    height: 100px;
+    border-top: 50px solid #000;
+    background-image: url("../assets/images/design/step-gradient-bg-black.png") repeat-x;
+    background-color: #F3F3F3;    
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0
+}
+
 .app-section {
     padding: 40px 0;
 }
@@ -595,8 +607,7 @@ li {
 main > .govuk-width-container:last-child .govuk-grid-column-two-thirds > a[title] {
     padding-bottom: 60px;
     width: 100%;
-    display: block;
-    background-color: #F3F3F3;
+    display: block;    
 }
 /* pg not found pg */
 /*** cookie msg ends ***/
