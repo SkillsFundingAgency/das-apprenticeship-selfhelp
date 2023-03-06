@@ -284,13 +284,14 @@ li {
     margin:5px;       
 }
 
-.article-panel{
+.article-body{
     position: relative;
     float: left;
     width: 100%;
     min-width: 200px;
     margin:5px;
-    z-index:10;
+    background-color: white;
+    padding: 50px;
 }
 
 .section-card {
@@ -328,6 +329,10 @@ li {
 
 .apprentice-green{
     color: #3cb821 !important;
+}
+
+.article-background{
+    background-color: #F3F3F3;
 }
 
 .z-index-3 {
