@@ -284,6 +284,14 @@ li {
     margin:5px;       
 }
 
+.article-panel{
+    position: relative;
+    float: left;
+    width: 30%;
+    min-width: 200px;
+    margin:5px;
+}
+
 .section-card {
     font-family: nobel, sans-serif;
     font-weight: 300;
