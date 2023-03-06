@@ -355,6 +355,7 @@ li {
 
 .app-section {
     padding: 40px 0;
+    position: relative;
 }
 
 .app-section--blue {
