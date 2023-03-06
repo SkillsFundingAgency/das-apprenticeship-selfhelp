@@ -284,13 +284,11 @@ li {
     margin:5px;       
 }
 
-.article-body{
-    position: relative;
-    float: left;
+.article-body{    
     width: 100%;
     min-width: 200px;
     margin:5px;
-    background-color: white;
+    background-color: white !important;
     padding: 50px;
 }
 
