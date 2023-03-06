@@ -353,18 +353,6 @@ li {
     padding-bottom: 0 !important;
 }
 
-.gradient-background{
-    height: 100px;
-    border-top: 50px solid #000;
-    background-image: url("../assets/images/design/step-gradient-bg-black.png") repeat-x;
-    background-color: #F3F3F3;    
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0
-}
-
 .app-section {
     padding: 40px 0;
 }
@@ -602,6 +590,10 @@ li {
     color: #005ea5;
     padding: 0;
     margin-left: 14px;
+}
+
+main{
+    background-color: #F3F3F3;
 }
 
 main > .govuk-width-container:last-child .govuk-grid-column-two-thirds > a[title] {
