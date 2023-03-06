@@ -1,4 +1,4 @@
-<div class="app-section no-bottom-padding">
+<div class="app-section no-bottom-padding no-top-padding">
   <nav class="fiu-navigation fiu-navigation--citizens" data-fiu-navigation="true">
     <div class="govuk-width-container">
         <a href="#navigation" class="fiu-navigation__toggle" data-fiu-nav-toggle="true">
@@ -55,7 +55,9 @@
 <div class="fiu-grad-row fiu-homepage-card-container">
   <span class="fiu-grad-row__bg"></span>
   <div class="fiu-width-container padding-top-250">
-    {{article.body}}
+    <div class="article-body">
+      {{article.body}}
+    </div>    
   </div>
 </div>
 
