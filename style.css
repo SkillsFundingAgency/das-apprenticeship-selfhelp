@@ -596,6 +596,7 @@ main > .govuk-width-container:last-child .govuk-grid-column-two-thirds > a[title
     padding-bottom: 60px;
     width: 100%;
     display: block;
+    background-color: #F3F3F3;
 }
 /* pg not found pg */
 /*** cookie msg ends ***/
