@@ -302,6 +302,10 @@ li {
     padding: 50px;
 }
 
+.fiu-tag--citizens-accessible {
+    background: #2e8540
+}
+
 .section-card {
     font-family: nobel, sans-serif;
     font-weight: 300;
