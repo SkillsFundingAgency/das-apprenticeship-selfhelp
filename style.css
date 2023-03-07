@@ -273,9 +273,10 @@ li {
 .header-link{
     display: inline-block;
     font-size: 13px;
+    font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
-    color: #0000 !important;
+    color: black !important;
     padding: 15px
 }
 
