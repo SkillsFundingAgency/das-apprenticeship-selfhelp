@@ -303,7 +303,7 @@ li {
 }
 
 .fiu-tag--citizens-accessible {
-    background-color: #2e8540;
+    background-color: #2e8540 !important;
 }
 
 .section-card {
