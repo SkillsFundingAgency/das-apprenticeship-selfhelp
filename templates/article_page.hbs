@@ -22,12 +22,9 @@
 <div class="app-section app-section--black no-bottom-padding">
     <nav aria-label="breadcrumbs" class="margin-left-5-pc">
         <ol class="govuk-breadcrumbs govuk-breadcrumbs__list">
-            <li class="govuk-breadcrumbs__list-item white">
-                {{#link 'help_center' class="breadcrumbs-link" aria-current="false"}}Home{{/link}}
-            </li>
-            <li class="govuk-breadcrumbs__list-item white">
-                <a class="breadcrumbs-link" aria-current="false" href="{{section.url}}">{{section.name}}</a>
-            </li>
+            <li class="govuk-breadcrumbs__list-item">
+                {{#link 'help_center' class="breadcrumbs-link  white" aria-current="false"}}Home{{/link}}
+            </li>           
             <li class="govuk-breadcrumbs__list-item white" aria-current="true">
                 {{article.title}}
             </li>
