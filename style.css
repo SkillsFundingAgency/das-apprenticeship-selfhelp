@@ -273,7 +273,7 @@ li {
 .header-link{
     display: inline-block;
     font-size: 13px;
-    font-weight: 700;
+    font-weight: 900;
     text-transform: uppercase;
     text-decoration: none;
     color: black !important;
@@ -337,6 +337,10 @@ li {
 
 .margin-top-20 {
     margin-top: 20px;
+}
+
+.margin-left-20 {
+    margin-left: 20px !important;
 }
 
 .white{
