@@ -343,6 +343,10 @@ li {
     margin-left: 5% !important;
 }
 
+.min-height-500 {
+    min-height: 500px;
+}
+
 .white{
     color: white !important;
 }
