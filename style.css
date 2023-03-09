@@ -303,7 +303,11 @@ li {
     }
 
     .auto-height {
-        height: auto !important;
+        height: auto !important;        
+    }
+
+    .margin-bottom-5-px {
+        margin-bottom: 5px !important;
     }
 }
 
