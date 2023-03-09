@@ -294,6 +294,15 @@ li {
     margin:10px;       
 }
 
+@media (min-width: 40.0625em) {
+    .section-panel {        
+        position: relative;
+        float: left;
+        width: 100%;        
+        margin:10px;
+    }
+}
+
 .article-body{    
     width: 100%;
     min-width: 200px;
