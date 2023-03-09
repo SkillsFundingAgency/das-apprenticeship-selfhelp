@@ -294,7 +294,7 @@ li {
     margin:10px;       
 }
 
-@media (min-width: 40.0625em) {
+@media (max-width: 40.0625em) {
     .section-panel {        
         position: relative;
         float: left;
