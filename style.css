@@ -301,6 +301,10 @@ li {
         width: 100%;        
         margin:10px;
     }
+
+    .auto-height {
+        height: auto !important;
+    }
 }
 
 .article-body{    
