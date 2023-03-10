@@ -384,7 +384,7 @@ li {
     z-index: 3;
 }
 
-@media(min-width: 58.4375em){
+@media(max-width: 58.4375em){
     .fiu-homepage-card-container{
         top: 0 !important;
     }
