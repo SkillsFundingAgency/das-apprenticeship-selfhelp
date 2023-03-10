@@ -384,9 +384,9 @@ li {
     z-index: 3;
 }
 
-@media(min-width: 37.5em){
-    .home-title-min-width{
-        min-width: 600px !important;
+@media(min-width: 40.0625em){
+    .home-title-width{
+        width: 600px !important;
     }
 }
 
