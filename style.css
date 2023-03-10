@@ -384,12 +384,6 @@ li {
     z-index: 3;
 }
 
-@media(max-width: 58.4375em){
-    .fiu-homepage-card-container{
-        top: 0 !important;
-    }
-}
-
 .position-relative{
     position: relative !important;
 }
