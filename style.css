@@ -384,6 +384,12 @@ li {
     z-index: 3;
 }
 
+@media(max-width: 40.0625em){
+    .home-title-min-width{
+        min-width: 611.1px !important;
+    }
+}
+
 .position-relative{
     position: relative !important;
 }
