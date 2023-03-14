@@ -62,6 +62,11 @@ li {
     }
 }
 
+#launcher{
+    display: none !important;
+    visibility: hidden !important;
+}
+
 /***** Feedback form *****/
 
 #das-feedback-form .request_ticket_form_id {
