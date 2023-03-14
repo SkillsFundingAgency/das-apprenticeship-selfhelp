@@ -334,20 +334,20 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 window.dataLayer = window.dataLayer || [];
-window.onload = function () {
-    setTimeout(function () {
+// window.onload = function () {
+//     setTimeout(function () {
 
-        var widgetLauncher = $('#launcher'),
-            widgetHelpButton = widgetLauncher.contents().find('button');
+//         var widgetLauncher = $('#launcher'),
+//             widgetHelpButton = widgetLauncher.contents().find('button');
 
-        if (widgetLauncher.length > 0 && widgetHelpButton.length > 0) {
-            widgetHelpButton.on('click', function () {
-                gtmEventPush({ 'action': 'Help button clicked' });
-                widgetOpened(widgetLauncher);
-            })
-        }
-    }, 1500);
-}
+//         if (widgetLauncher.length > 0 && widgetHelpButton.length > 0) {
+//             widgetHelpButton.on('click', function () {
+//                 gtmEventPush({ 'action': 'Help button clicked' });
+//                 widgetOpened(widgetLauncher);
+//             })
+//         }
+//     }, 1500);
+// }
 
 var widgetOpened = function () {
     var container = $('#webWidget');
