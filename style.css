@@ -324,6 +324,10 @@ li {
     line-height:1.5 !important;
 }
 
+.article-body p {
+    line-height:1.5 !important;
+}
+
 .fiu-tag--citizens-accessible {
     background-color: #2e8540 !important;
 }
