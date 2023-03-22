@@ -286,7 +286,9 @@ li {
 }
 
 .sections-list{
-    width: 100%;    
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;    
 }
 
 .section-panel{
@@ -294,7 +296,7 @@ li {
     float: left;
     width: 30%;
     min-width: 200px;
-    height: 340px;
+    height: 400px;
     margin:10px;       
 }
 
