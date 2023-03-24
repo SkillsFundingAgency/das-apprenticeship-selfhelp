@@ -1,7 +1,8 @@
 <div class="app-section no-bottom-padding no-top-padding">
   <nav class="fiu-navigation fiu-navigation--citizens-accessible" data-fiu-navigation="true">
     <div class="govuk-width-container">
-        <a href="#navigation" class="fiu-navigation__toggle" data-fiu-nav-toggle="true">
+      {{!-- On clicking this link, the body class should toggle adding/removing: fiu-navigation-menu-open --}}
+        <a href="#navigation" id="navigation" class="fiu-navigation__toggle" data-fiu-nav-toggle="true" onclick="toggleMenu()">
             <span class="fiu-navigation__toggle-label" id="nav-label">Menu</span>
             <span class="fiu-navigation__toggle-icon"></span>
         </a>

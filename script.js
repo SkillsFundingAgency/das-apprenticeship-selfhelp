@@ -333,6 +333,10 @@ document.addEventListener('DOMContentLoaded', function () {
     /* Cookie Article, with consent ends */
 });
 
+function toggleMenu(){
+    $("body").toggleClass("fiu-navigation-menu-open");
+}
+
 window.dataLayer = window.dataLayer || [];
 window.onload = function () {
     setTimeout(function () {
