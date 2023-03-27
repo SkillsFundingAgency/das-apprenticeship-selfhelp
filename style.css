@@ -317,6 +317,12 @@ li {
     }
 }
 
+@media (max-width: 40.0625em) {
+    .header-panel {        
+        min-height:400px;
+    }
+}
+
 .article-body{    
     width: 100%;
     min-width: 200px;
