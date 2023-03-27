@@ -319,7 +319,7 @@ li {
 
 @media (min-width: 40.0625em) {
     .header-panel {        
-        min-height:400px;
+        min-height:500px;
     }
 }
 
