@@ -413,6 +413,13 @@ li {
     }
 }
 
+@media(max-width: 40.0625em){
+    .home-subtitle-links{
+        display: none !important;
+        visibility: hidden !important;
+    }
+}
+
 .position-relative{
     position: relative !important;
 }
