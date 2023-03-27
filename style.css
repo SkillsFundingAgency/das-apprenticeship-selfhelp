@@ -413,7 +413,7 @@ li {
     }
 }
 
-@media(max-width: 1300px){
+@media(max-width: 50em){
     .home-subtitle-links{
         display: none !important;
         visibility: hidden !important;
