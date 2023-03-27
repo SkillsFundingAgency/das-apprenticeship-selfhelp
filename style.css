@@ -317,7 +317,7 @@ li {
     }
 }
 
-@media (max-width: 40.0625em) {
+@media (min-width: 40.0625em) {
     .header-panel {        
         min-height:400px;
     }
