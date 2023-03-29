@@ -2,6 +2,7 @@
 
 body {
     font-family: "GDS Transport",Arial,sans-serif;
+    background-color: #f3f2f1;
 }
 
 p {
@@ -373,6 +374,10 @@ li {
 
 .left{
     text-align: left;
+}
+
+.margin-top-10-px{
+    margin-top: 10px !important;
 }
 
 .margin-top-20 {
