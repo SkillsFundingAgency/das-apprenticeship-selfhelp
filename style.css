@@ -21,28 +21,6 @@ p {
     line-height: 1.25 !important;
 }
 
-
-
-a:link {
-    color: #FFFFFF
-}
-
-a:visited {
-    color: #4c2c92
-}
-
-a:hover {
-    color: #2b8cc4
-}
-
-a:active {
-    color: #2b8cc4
-}
-
-a:focus {
-    color: #005ea5
-}
-
 ul, ol, dt {
     font-family: "GDS Transport",Arial,sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -411,14 +389,6 @@ li {
 
 .min-height-500 {
     min-height: 500px;
-}
-
-.white{
-    color: white !important;
-}
-
-.black {
-    color: black !important;
 }
 
 .apprentice-green{
