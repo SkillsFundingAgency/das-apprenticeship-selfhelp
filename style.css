@@ -28,7 +28,6 @@ ul, ol, dt {
     font-weight: 400;
     font-size: 1.1875rem;
     line-height: 1.25;
-    color: #0b0c0c;
     margin-top: 0;
     margin-bottom: 15px;
 }
@@ -467,6 +466,7 @@ li {
     padding: 20px;
 }
 
+.govuk-breadcrumbs__list-item > a,
 .breadcrumbs-link {
     font-family: "GDS Transport", arial, sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -477,6 +477,7 @@ li {
     color: white;
 }
 
+.govuk-breadcrumbs__list-item > a:hover,
 .breadcrumbs-link:hover {
     text-decoration-thickness: max(3px, .1875rem, .12em);
     -webkit-text-decoration-skip-ink: none;
