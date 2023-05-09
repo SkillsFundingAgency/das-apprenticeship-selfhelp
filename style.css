@@ -43,24 +43,6 @@ a:focus {
     color: #005ea5
 }
 
-.article-body a,
-.article-body a:link {
-    color: #1d70b8;
-}
-
-.article-body a:hover {
-    color: #003078;
-}
-
-.article-body a:focus {
-    outline: 3px solid rgba(0,0,0,0);
-    color: #0b0c0c;
-    background-color: #fd0;
-    box-shadow: 0 -2px #fd0, 0 4px #0b0c0c;
-    text-decoration: none;
-    -webkit-box-decoration-break: clone;
-}
-
 ul, ol, dt {
     font-family: "GDS Transport",Arial,sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -361,6 +343,25 @@ li {
 
 .article-body p {
     line-height:1.5 !important;
+}
+
+.article-body a,
+.article-body a:link {
+    color: #1d70b8;
+}
+
+.article-body a:hover,
+.article-body a:visited {
+    color: #003078;
+}
+
+.article-body a:focus {
+    outline: 3px solid rgba(0,0,0,0);
+    color: #0b0c0c;
+    background-color: #fd0;
+    box-shadow: 0 -2px #fd0, 0 4px #0b0c0c;
+    text-decoration: none;
+    -webkit-box-decoration-break: clone;
 }
 
 .fiu-tag--citizens-accessible {
